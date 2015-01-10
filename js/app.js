@@ -1,3 +1,6 @@
+var START = 1;
+var END = 100;
+
 function fizzBuzz(number){
 	if(number % 15 == 0){
 		return 'fizzbuzz';
@@ -15,10 +18,10 @@ function fizzBuzz(number){
 }
 
 $(document).ready(function(){
-var start=1;
-var end=100;
+//var START = 1;
+//var END = 100;
 //alert('hello');
-for(var i = start ; i <= end; i++ ){
+for(var i = START ; i <= END; i++ ){
 
 $('body').append(fizzBuzz(i) + ' ');
 
