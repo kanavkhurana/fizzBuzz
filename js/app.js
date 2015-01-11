@@ -19,7 +19,10 @@ $(document).ready(function() {
             alert('Please enter a number!');
         } else if (isNaN(end)) {
             alert('Please enter a valid number!');
-        } else if(end % 1 != 0){
+        }else if(end < 0){
+        	alert('Please enter a positive number!');
+        } 
+        else if(end % 1 != 0){
         	alert('Please enter a whole number!');
         } else{
 
@@ -33,6 +36,6 @@ $(document).ready(function() {
     })
     /*
     Ask the user to input a number - use prompt() - DONE
-    Make the output more readible 
+    Make the output more readible - DONE
     Use brackets.io for jslint - can try
     */
